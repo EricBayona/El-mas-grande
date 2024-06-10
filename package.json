@@ -1,0 +1,16 @@
+{
+  "name": "river-campeon",
+  "version": "1.0.0",
+  "description": "Equipos campeones de Libertadores de River Plate",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "River",
+    "Campeon",
+    "Libertadores"
+  ],
+  "author": "Eric Bayona",
+  "license": "ISC"
+}
