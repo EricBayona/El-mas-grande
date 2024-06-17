@@ -30,3 +30,24 @@ function drop(ev){
     //     }
     // }
 }
+
+const boton = document.querySelector("#controlar");
+boton.onclick=controlar;
+
+function controlar(){
+    let controlar = true;
+    for (let i = 0; i < arreglo.length; i++) {
+      if (arreglo[i]==i) {
+          controlar=true
+      }else{
+          controlar= false
+          break;
+        }
+    }
+    if(controlar == true){
+        document.querySelector("h4").innerHTML="MUY BIEN"
+    }
+    else{
+        document.querySelector("h4").innerHTML="Intenta de nuevo"
+    }
+  }

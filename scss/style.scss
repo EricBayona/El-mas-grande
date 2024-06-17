@@ -2,15 +2,27 @@
     margin: 0;
     padding: 0;
 }
-h1{ text-align: center; margin: 1rem;}
+body{
+    background-image: url(../assets/monumental.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{ text-align: center; margin: 1rem;color: #fff;};
+h2{color: #fff;};
+h4{font-size: 3rem;color: red;text-align: center;
+margin-top: 10px;
+position:absolute;};
 #contenedor-jugadores{
     display: flex;
     flex-wrap: wrap;
+    
+
     
 }
 .jugador-campeon{
     margin: 1rem auto;
     text-align: center;
+    color: #fff;
     & img{
         width: 3rem;
         border-radius: 100%;
