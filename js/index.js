@@ -2,8 +2,10 @@ const contenedorTarjetas = document.querySelector("#contenedor-jugadores");
 const contenedorContenedores = document.querySelector("#container");
 
 
-function crearTarjetaJugadores(jugadores){
-    jugadores.forEach(jugador => {
+function crearTarjetaJugadores(campeonesElegidos){
+
+    contenedorTarjetas.innerHTML=""
+    campeonesElegidos.forEach(jugador => {
         const nuevoJugador = document.createElement("div");
         nuevoJugador.classList ="jugador-campeon";
         nuevoJugador.innerHTML=`
@@ -25,5 +27,17 @@ function crearContendoresDeTarjetas(jugadores){
         contenedorContenedores.appendChild(nuevoContenedor)
     })
 }
-crearTarjetaJugadores(jugadores);
-crearContendoresDeTarjetas(jugadores)
+
+
+
+const botonesCampeones = document.querySelectorAll(".botones-campeones");
+
+botonesCampeones.forEach(boton =>{
+    boton.addEventListener("click",(e)=>{
+
+    const jugadorCampeon =jugadores.filter(jugadores => jugadores.campeon.id ===e.currentTarget.id)
+    crearTarjetaJugadores(jugadorCampeon)
+    crearContendoresDeTarjetas(jugadorCampeon)
+    
+})
+})

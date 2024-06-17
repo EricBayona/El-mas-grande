@@ -1,69 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url(../assets/monumental.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h1 {
-  text-align: center;
-  margin: 1rem;
-  color: #fff;
-}
-
-h2 {
-  color: #fff;
-}
-
-h4 {
-  font-size: 3rem;
-  color: red;
-  text-align: center;
-  margin-top: 10px;
-  position: absolute;
-}
-
-#contenedor-jugadores {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.jugador-campeon {
-  margin: 1rem auto;
-  text-align: center;
-  color: #fff;
-}
-.jugador-campeon img {
-  width: 3rem;
-  border-radius: 100%;
-  aspect-ratio: 1;
-}
-
-.campo-de-juego {
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-
-.figura {
-  margin: auto auto;
-}
-.figura .box {
-  width: 3rem;
-  aspect-ratio: 1;
-  border-radius: 100%;
-  border: 1px solid black;
-}
-.figura .box img {
-  width: 3rem;
-  border-radius: 100%;
-  aspect-ratio: 1;
-}
-
 .container {
   display: grid;
   position: absolute;
@@ -130,6 +64,77 @@ h4 {
 .delantero-der {
   grid-row: 3/5;
   grid-column: 4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../assets/monumental.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+h4 {
+  font-size: 3rem;
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+}
+
+#contenedor-jugadores {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jugador-campeon {
+  margin: 1rem auto;
+  text-align: center;
+  color: #fff;
+}
+.jugador-campeon img {
+  width: 3rem;
+  border-radius: 100%;
+  aspect-ratio: 1;
+}
+
+.campo-de-juego {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.figura {
+  margin: auto auto;
+}
+.figura .box {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.figura .box img {
+  width: 3rem;
+  border-radius: 100%;
+  aspect-ratio: 1;
+}
+
+button {
+  background: #067825;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

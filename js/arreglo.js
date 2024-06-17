@@ -17,18 +17,6 @@ function drop(ev){
         arreglo[parseInt(ev.target.id)]=data;
         ev.target.appendChild(document.getElementById(data));
     }
-
-
-    //solucionar,buscar forma de optimizar el codigo
-    // if( arreglo[0] != ""){
-    //     if (arreglo[0] == 0 ){
-    //         document.querySelector("h1").innerHTML="MUY BIEN"
-    //         i++
-    //     }
-    //     else{
-    //         document.querySelector("h1").innerHTML="INTENTA DE NUEVO"
-    //     }
-    // }
 }
 
 const boton = document.querySelector("#controlar");
@@ -51,3 +39,11 @@ function controlar(){
         document.querySelector("h4").innerHTML="Intenta de nuevo"
     }
   }
+
+
+const botonReiniciar = document.querySelector("#reiniciar");
+botonReiniciar.onclick = reiniciar;
+
+function reiniciar(){
+    location. reload()
+}
