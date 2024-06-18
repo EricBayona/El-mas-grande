@@ -25,8 +25,7 @@ function crearContendoresDeTarjetas(jugadores){
                 </div>
         `
         contenedorContenedores.appendChild(nuevoContenedor)
-    })
-}
+    })}
 
 
 
@@ -34,10 +33,13 @@ const botonesCampeones = document.querySelectorAll(".botones-campeones");
 
 botonesCampeones.forEach(boton =>{
     boton.addEventListener("click",(e)=>{
-
+        reiniciarArreglo()
     const jugadorCampeon =jugadores.filter(jugadores => jugadores.campeon.id ===e.currentTarget.id)
+    for(i=0; i<jugadorCampeon.length; i++){
+
+        console.log(jugadorCampeon[i].id)
+    }
     crearTarjetaJugadores(jugadorCampeon)
     crearContendoresDeTarjetas(jugadorCampeon)
-    
-})
+    })
 })
